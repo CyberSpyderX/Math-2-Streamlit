@@ -108,11 +108,6 @@ def predictor():
     elif result[0][35] == max(result[0]):
         return 'Z'
 
-picture = st.camera_input("Take a picture")
-
-if picture:
-    st.image(picture)
-
 while run:
     picture = st.camera_input("Take a picture")
 
