@@ -1,3 +1,6 @@
+import os
+os.environ['PYOPENGL_PLATFORM'] = 'egl'
+
 import cv2
 import numpy as np
 import keras
