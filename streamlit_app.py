@@ -111,7 +111,9 @@ def predictor():
 ls = []
 a = ''
 img_text = ''
+print("Starting video stream...")
 cam = cv2.VideoCapture(0)
+print("Video stream started...")
 
 while run:
     ret, frame = cam.read()
