@@ -10,7 +10,7 @@ import time
 st.title("Webcam Live Feed")
 
 run = st.checkbox('Start')
-FRAME_WINDOW = st.image([])
+# FRAME_WINDOW = st.image([])
 
 
 def nothing1(x):
@@ -111,7 +111,9 @@ def predictor():
 while run:
     picture = st.camera_input("Take a picture")
 
-    bytes_data = picture.getvalue()
-    cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
-    st.write(cv2_img)
+    if picture is not None:
+        bytes_data = picture.getvalue()
+        cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
+        st.write(cv2_img)
+
     time.sleep(5)
