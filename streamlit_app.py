@@ -10,7 +10,6 @@ st.title("Webcam Live Feed")
 
 run = st.checkbox('Start')
 FRAME_WINDOW = st.image([])
-cam = cv2.VideoCapture(0)
 
 
 def nothing1(x):
