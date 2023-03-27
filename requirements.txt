@@ -10,4 +10,3 @@ tensorflow
 nltk
 pandas
 scikit-learn
-pyaudio

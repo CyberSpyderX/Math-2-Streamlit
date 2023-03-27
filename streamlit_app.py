@@ -5,7 +5,6 @@ import streamlit as st
 from keras.preprocessing import image
 from keras.utils import load_img, img_to_array
 import time
-import pyttsx3
 
 st.title("Webcam Live Feed")
 
@@ -110,7 +109,6 @@ def predictor():
 
 # print(predictor())
 
-hey = pyttsx3.init()
 ls = []
 a = ''
 img_text = ''
@@ -153,8 +151,9 @@ while run:
     img_text = predictor()
     
     if cv2.waitKey(1) == ord('s'):
-        hey.say("{}".format(a))
-        hey.runAndWait()
+        # hey.say("{}".format(a))
+        # hey.runAndWait()
+        print("Trying to speak...")
     if cv2.waitKey(1) == 27:
         break
 
