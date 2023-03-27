@@ -16,6 +16,10 @@ def main():
         # Read a frame from the webcam
         ret, frame = cap.read()
 
+        if not ret:
+            st.text('The camera could not be opened')
+            break
+
         # Convert the frame to RGB color space
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
