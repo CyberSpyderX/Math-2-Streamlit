@@ -11,3 +11,4 @@ nltk
 pandas
 scikit-learn
 streamlit_webrtc
+webrtc_streamer
