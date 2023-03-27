@@ -108,9 +108,10 @@ def predictor():
     elif result[0][35] == max(result[0]):
         return 'Z'
 
+id = 1
 while run:
-    picture = st.camera_input("Take a picture")
-
+    picture = st.camera_input(id)
+    id = id + 1
     if picture is not None:
         bytes_data = picture.getvalue()
         cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
