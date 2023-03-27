@@ -111,11 +111,9 @@ def predictor():
 ls = []
 a = ''
 img_text = ''
-print("Starting video stream...")
-cam = cv2.VideoCapture(-1)
-print("Video stream started...")
 
 while run:
+    cam = cv2.VideoCapture(0)
     ret, frame = cam.read()
     if not ret:
         break
