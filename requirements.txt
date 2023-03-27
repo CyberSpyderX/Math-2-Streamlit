@@ -6,6 +6,7 @@ textblob
 scipy
 numpy
 pytesseract
+tensorflow
 nltk
 pandas
 scikit-learn
