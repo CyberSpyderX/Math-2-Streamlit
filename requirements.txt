@@ -10,3 +10,4 @@ tensorflow
 nltk
 pandas
 scikit-learn
+streamlit_webrtc
